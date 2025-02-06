@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Community Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style type="text/css">
+       
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+       
+        header .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        }
+
+        header a img {
+        width: 130px; 
+        display: block; 
+        }
+
+
+        header {
+        height: 100px; 
+        padding: 10px 0;
+        }
+
+        
+
+        main {
+            padding: 50px;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+          <div class="logo-container">
+            <a href="dashboard.html">
+                <img src="assets/website_logo.png" alt="Logo">
+            </a>
+        </div>
+       
+    </header>
+    <main>
+        <section class="form-container">
+            <h1>Create Your Community</h1>
+            <form id="community-form">
+                <div class="form-group">
+                    <label for="community-name">Community Name:</label>
+                    <input type="text" id="community-name" name="community-name" placeholder="Enter your community name">
+                </div>
+                <div class="form-group">
+                    <label for="members">Number of Members (Optional):</label>
+                    <input type="number" id="members" name="members" placeholder="Enter estimated number of members">
+                </div>
+                <div class="form-group">
+                    <label for="work-done">What does your community do? (Brief description)</label>
+                    <textarea id="work-done" name="work-done" rows="5" placeholder="Describe your community's activities and goals"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="founder-name">Founder Name:</label>
+                    <input type="text" id="founder-name" name="founder-name" placeholder="Enter the founder's name">
+                </div>
+                <div class="form-group">
+                    <label for="theme">Community Theme:</label>
+                    <select id="theme" name="theme">
+                        <option value="">Select a Theme</option>
+                        <option value="art">Art & Design</option>
+                        <option value="tech">Technology</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="community-image">Upload a Community Image (Optional):</label>
+                    <input type="file" id="community-image" name="community-image">
+                </div>
+                <button type="submit">Create Community</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Technical Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #264653;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1000px;
+            height: 400px;
+            background: #fff;
+            margin: 120px auto;
+            display: flex;
+        }
+
+        .col {
+            position: relative;
+            height: 100%;
+            flex: 1;
+            color: #fff;
+            box-sizing: border-box;
+            padding: 25px;
+            transition: 0.6s ease;
+        }
+
+        .col:nth-child(1) {
+            background-color: #cdb4db;
+        }
+
+        .col:nth-child(2) {
+            background-color: #ffafcc;
+        }
+
+        .col:nth-child(3) {
+            background-color: #a2d2ff;
+        }
+
+        .col h2 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .caption {
+            max-width: 230px;
+            font-size: 12px;
+            margin: 28px 0;
+            display: none;
+            animation: 0.6s;
+        }
+
+        .caption button {
+            border: 1px solid #fff;
+            background-color: transparent;
+            outline: none;
+            padding: 8px 18px;
+            color: #fff;
+            border-radius: 30px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .col img {
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .col:hover {
+            flex-grow: 2.5;
+        }
+
+        .col:hover .caption {
+            display: block;
+        }
+
+        .col:hover h2 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>Literature and Writing</h2>
+            <div class="caption">
+                <p>"our vibrant literary community. Dive into a world of storytelling, creativity, and inspiration with fellow writers and literature enthusiasts. Unleash your imagination and explore endless possibilities in the captivating realm of literature and writing."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/non_tech_lit_art.png" style="width:180px;">
+        </div>
+        <div class="col">
+            <h2>Music and Performing Arts</h2>
+            <div class="caption">
+                <p>our vibrant community of music and performing arts lovers. Dive into a world of creativity, expression, and inspiration. Connect with fellow artists, unleash your talent, and explore endless possibilities in the captivating realm of music and performance."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/non_tech_music.png" style="width:240px;">
+        </div>
+        <div class="col">
+            <h2>Travel and Adventure</h2>
+            <div class="caption">
+                <p> our adventurous community of travel enthusiasts. Embark on a journey of discovery, exploration, and unforgettable experiences. Connect with fellow adventurers, share stories, and explore endless possibilities in the thrilling world of travel and adventure."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/non_tech_traval.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

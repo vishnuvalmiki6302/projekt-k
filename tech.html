@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Clubs and Communities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .col {
+            flex: 1 1 300px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .col:hover {
+            transform: translateY(-5px);
+        }
+
+        .col img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .col-content {
+            padding: 20px;
+        }
+
+        .col h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .col p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .col .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #077b30;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .col .btn:hover {
+            background-color: #013100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <img src="assets/Communtiy_img/robotic_club.webp" alt="Robotics Club">
+            <div class="col-content">
+                <h2>Robotics Club</h2>
+                <p>The Robotics Club at our university fosters creativity and innovation in the field of robotics. Join us to explore cutting-edge technology, collaborate on exciting projects, and participate in competitions.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <img src="assets/Communtiy_img/debate_img.webp" alt="Debate Society">
+            <div class="col-content">
+                <h2>Debate Society</h2>
+                <p>Engage in lively discussions, hone your public speaking skills, and participate in competitive debates with the Debate Society. Join us to develop critical thinking and effective communication abilities.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <img src="assets/Communtiy_img/photography.webp" alt="Photography Club">
+            <div class="col-content">
+                <h2>Photography Club</h2>
+                <p>Capture moments, express creativity, and learn photography techniques with the Photography Club. Whether you're a beginner or an enthusiast, join us to share your passion for photography.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+        <div class="col">
+            <img src="assets/Communtiy_img/environmental_club.webp" alt="Environmental Club">
+            <div class="col-content">
+                <h2>Environmental Club</h2>
+                <p>Join hands with us to promote environmental awareness, sustainability, and conservation efforts. Participate in eco-friendly initiatives, workshops, and campaigns to make a positive impact on the planet.</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #264653;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 1000px;
+            height: 400px;
+            background: #fff;
+            margin: 120px auto;
+            display: flex;
+        }
+
+        .col {
+            position: relative;
+            height: 100%;
+            flex: 1;
+            color: #fff;
+            box-sizing: border-box;
+            padding: 25px;
+            transition: 0.6s ease;
+        }
+
+        .col:nth-child(1) {
+            background-color: #cdb4db;
+        }
+
+        .col:nth-child(2) {
+            background-color: #ffafcc;
+        }
+
+        .col:nth-child(3) {
+            background-color: #a2d2ff;
+        }
+
+        .col h2 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .caption {
+            max-width: 230px;
+            font-size: 12px;
+            margin: 28px 0;
+            display: none;
+            animation: 0.6s;
+        }
+
+        .caption button {
+            border: 1px solid #fff;
+            background-color: transparent;
+            outline: none;
+            padding: 8px 18px;
+            color: #fff;
+            border-radius: 30px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .col img {
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .col:hover {
+            flex-grow: 2.5;
+        }
+
+        .col:hover .caption {
+            display: block;
+        }
+
+        .col:hover h2 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>Food and Cuisine</h2>
+            <div class="caption">
+                <p>"our flavorful community of foodies and culinary enthusiasts. Embark on a culinary journey filled with tastes, aromas, and cultural delights. Connect with fellow food lovers, share recipes, and explore endless possibilities in the delicious world of food and cuisine."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/cultural_food.png" style="width:180px;">
+        </div>
+        <div class="col">
+            <h2>Language and Linguistic</h2>
+            <div class="caption">
+                <p>"iverse community of language enthusiasts. Dive into the fascinating world of languages, communication, and cultural exchange. Connect with fellow linguists, explore new languages, and embark on a journey of endless discovery and connection."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/cultural_language.png" style="width:240px;">
+        </div>
+        <div class="col">
+            <h2>Cultural and Heritage</h2>
+            <div class="caption">
+                <p>"vibrant community celebrating culture and heritage. Immerse yourself in rich traditions, stories, and shared experiences. Connect with fellow enthusiasts, honor diverse cultures, and explore endless possibilities in the colorful world of cultural heritage."</p>
+                <button type="button">Know More</button>
+            </div>
+            <img src="assets/Communtiy_img/cultural_heritage.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

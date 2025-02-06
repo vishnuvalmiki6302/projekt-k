@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header .logo-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%; 
+        }
+
+        header a img {
+          width: 130px; 
+          display: block; 
+        }
+
+
+        header {
+          height: 150px; 
+          padding: 10px 0;
+        }
+        
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .profile-info {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-info p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-info i {
+      margin-right: 10px;
+      color: #555;
+    }
+
+    #logoutBtn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background-color: #e53935;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #logoutBtn i {
+      margin-right: 5px;
+    }
+
+    #logoutBtn:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="dashboard.html">
+        <img src="assets/website_logo.png" alt="Logo">
+      </a>
+    </div>
+   
+    
+  </header>
+
+  <div class="container">
+    <h1>Profile</h1>
+    <div class="profile-info">
+      <p><i class="fas fa-university"></i> <strong>University Name:</strong> <span id="universityName"></span></p>
+      <p><i class="fas fa-user"></i> <strong>First Name:</strong> <span id="firstName"></span></p>
+      <p><i class="fas fa-user"></i> <strong>Last Name:</strong> <span id="lastName"></span></p>
+      <p><i class="fas fa-id-card"></i> <strong>Registration Number:</strong> <span id="registrationNumber"></span></p>
+      <p><i class="fas fa-envelope"></i> <strong>Email ID:</strong> <span id="emailId"></span></p>
+      <br>
+      <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </div>
+
+  <script>
+  
+    var userData = JSON.parse(localStorage.getItem("userData"));
+
+    document.getElementById("universityName").textContent = userData.collegeName;
+    document.getElementById("firstName").textContent = userData.firstName;
+    document.getElementById("lastName").textContent = userData.lastName;
+    document.getElementById("registrationNumber").textContent = userData.registrationId;
+    document.getElementById("emailId").textContent = userData.email;
+
+    // Logout button functionality
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+      // Clear user data from localStorage
+    //   localStorage.removeItem("userData");
+      // Redirect to the login page
+      window.location.href = "authentication.html";
+    });
+  </script>
+</body>
+</html>
